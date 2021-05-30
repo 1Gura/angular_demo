@@ -1,16 +1,24 @@
-<h1>Angular 11</h1>
+<!--<h1>Angular 11</h1>
 <h2>Sub header</h2>
-<div class="body">
-  <app-post-form (newPost)="newPost($event)"></app-post-form>
-  <ng-container>
-    <app-post
-      *ngFor="let p of posts"
-      [post]="p"
-    >
-      <div #info>
-        <small *ngIf="p.text.length>10; else short">Пост длинный</small>
-        <ng-template #short></ng-template>
-      </div>
-    </app-post>
-  </ng-container>
+<div class="body">-->
+<p appStyle="red" fontWeight="bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, labore.</p>
+
+<button class="btn" (click)="isVisible = !isVisible">click</button>
+<div>
+  <p class="wrap" *appIfNot="!isVisible">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deleniti ducimus nisi obcaecati repellendus. Aliquam aspernatur exercitationem impedit non quae?
+  </p>
 </div>
+<!--<app-post-form (newPost)="newPost($event)"></app-post-form>
+<ng-container>
+  <app-post
+    *ngFor="let p of posts"
+    [post]="p"
+  >
+    <div #info>
+      <small *ngIf="p.text.length>10; else short">Пост длинный</small>
+      <ng-template #short></ng-template>
+    </div>
+  </app-post>
+</ng-container>
+</div>-->

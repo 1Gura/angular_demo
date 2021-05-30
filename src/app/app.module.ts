@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 import { PostFormComponent } from './post-form/post-form.component';
 import { PostComponent } from './post/post.component';
 import {FormsModule} from "@angular/forms";
+import {StyleDirective} from "./directives/style.directive";
+import {IfnotDirective} from "./directives/ifnot.directive";
 
 @NgModule({
   declarations: [
     AppComponent,
+    StyleDirective,
     PostFormComponent,
-    PostComponent
+    PostComponent,
+    IfnotDirective
   ],
   imports: [
     BrowserModule,
