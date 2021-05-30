@@ -1,0 +1,26 @@
+<div class="post-form">
+  <input
+    type="text"
+    placeholder="Введите заголовок..."
+    [(ngModel)]="title"
+    #titleInput
+  >
+  <input
+    type="text"
+    placeholder="Введите заголовок..."
+    [(ngModel)]="text"
+  >
+  <br>
+  <button
+    class="btn"
+    (click)="addPost()"
+  >
+    Добавить
+  </button>
+  <button
+    class="btn"
+    (click)="setFocus()"
+  >
+    Фокус
+  </button>
+</div>
